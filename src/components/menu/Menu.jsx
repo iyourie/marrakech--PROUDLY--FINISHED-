@@ -9,7 +9,7 @@ import { TiGroup } from "react-icons/ti";
 import { FaMap } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
 //import logo
-import Logo from '../../assets/Capture-removebg-preview (1).png'
+import Logo from '../../assets/6-removebg-preview.png'
 //import translation hook
 import { useTranslation } from 'react-i18next';
 
