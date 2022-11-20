@@ -1,0 +1,207 @@
+:root {
+    --color: #ff6334;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    font-style: italic;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* info section style  */
+header .container .info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+header .container .info div {
+    display: flex;
+}
+
+/* group request style  */
+header .container .info #group a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+header .container .info #group a svg {
+    font-size: 26px;
+}
+
+header .container .info #group a:hover {
+    opacity: 1;
+}
+
+header .container .info #group span {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* translition style start*/
+.container .info #icons p {
+    font-size: 21px;
+    margin-right: 5px;
+    color: white;
+    transform: translate(0px, -1px);
+}
+
+.container .info #icons p span:first-child {
+    margin-right: 3px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.container .info #icons p span:last-child {
+    cursor: pointer;
+    opacity: 0.5;
+    margin-left: 3px;
+}
+
+/* icons style */
+header .container .info a {
+    font-size: 23px;
+    margin: 0 8px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    color: white;
+    opacity: 0.5;
+}
+
+header .container .info a:hover {
+    opacity: 1;
+}
+
+/* email icon style  */
+header .container .info form button {
+    background: transparent;
+    margin: 0 8px;
+    cursor: pointer;
+    border: transparent;
+    color: white;
+    opacity: 0.5;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+header .container .info form button:hover {
+    opacity: 1;
+}
+
+header .container .info form button svg {
+    font-size: 25px;
+}
+
+/* nav section style */
+header .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+header .container nav .logo img {
+    width: 200px;
+    transform: translate(-3px);
+}
+
+header .container nav .links {
+    transform: translate(-15px, -3px);
+    -webkit-transform: translate(-15px, -3px);
+    -moz-transform: translate(-15px, -3px);
+    -ms-transform: translate(-15px, -3px);
+    -o-transform: translate(-15px, -3px);
+}
+
+header .container nav .links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 14px;
+    opacity: 0.5;
+    text-transform: capitalize;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+/* map icon  */
+header .container nav .map a {
+    margin: 0 12px 0 0;
+    color: white;
+    font-size: 22px;
+    opacity: 0.5;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+/* menu icon  */
+header .container nav .map i {
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+
+header .container nav .links a:hover,
+header .container nav .map a:hover {
+    opacity: 1;
+}
+
+/* media queries start */
+@media screen and (max-width: 1300px) {
+    header .container nav .logo img {
+        width: 180px;
+    }
+
+    header .container nav .links a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    header .container nav {
+        padding-top: 10px;
+    }
+
+    header .container .info {
+        display: none;
+    }
+
+    header .container nav .links {
+        display: none
+    }
+
+    header .container nav .map a {
+        display: none
+    }
+
+    header .container nav .map i {
+        display: block;
+    }
+}
