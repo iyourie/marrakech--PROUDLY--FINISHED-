@@ -1,12 +1,46 @@
 .menu {
-    display: none;
     background-color: white;
     width: 700px;
-    height: 100%;
-    /* transform: translate(-700px, 0px); */
-    transition: .3s;
+    height: 1054px;
     position: absolute;
-    z-index: 665;
+    z-index: 3;
+    transform: translate(-700px, 0px);
+    -webkit-transform: translate(-700px, 0px);
+    -moz-transform: translate(-700px, 0px);
+    -ms-transform: translate(-700px, 0px);
+    -o-transform: translate(-700px, 0px);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+    }
+}
+
+/* close menu icon style */
+.menu #close2 {
+    color: black;
+    right: 0;
+    position: absolute;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .menu #close2 {
+        display: block;
+    }
 }
 
 /* logo map style  */
@@ -14,8 +48,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
-    padding: 0 20px;
+    border-bottom: solid 1px #00000026;
+    padding: 5px 20px;
 }
 
 .menu .logo-map img {
@@ -25,6 +59,16 @@
 .menu .logo-map a:last-child {
     font-size: 25px;
     color: black;
+    opacity: 0.5;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.menu .logo-map a:last-child:hover {
+    opacity: 1;
 }
 
 /* menu links style  */
@@ -36,19 +80,103 @@
 .menu-links a {
     color: black;
     text-decoration: none;
-    border-bottom: solid 1px;
+    border-bottom: solid 1px #00000026;
     padding: 12px 30px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .menu-links a:hover {
-    background-color: rgb(122, 122, 122);
+    color: black;
+    background-color: rgb(233, 232, 232);
+    transform: translate(5px);
+    -webkit-transform: translate(5px);
+    -moz-transform: translate(5px);
+    -ms-transform: translate(5px);
+    -o-transform: translate(5px);
+}
+
+.menu-links a svg {
+    font-size: 20px;
 }
 
 /* social style */
 .social {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 20px;
+}
+
+.social a {
+    color: black;
+    opacity: 0.5;
+    margin: 10px 20px;
+    font-size: 25px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.social a:hover {
+    opacity: 1;
+    color: black;
+}
+
+.social form button {
+    background: transparent;
+    margin: 0 20px;
+    cursor: pointer;
+    border: transparent;
+    color: black;
+    opacity: 0.5;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transform: translate(0px,2px);
+    -webkit-transform: translate(0px,2px);
+    -moz-transform: translate(0px,2px);
+    -ms-transform: translate(0px,2px);
+    -o-transform: translate(0px,2px);
+}
+
+.social form button:hover {
+    opacity: 1;
+}
+
+.social form button svg {
+    font-size: 26px;
+}
+
+/* translition style */
+.menu .lng {
+    display: flex;
+    justify-content: center;
+}
+
+.menu .lng p {
+    font-size: 21px;
+}
+
+.menu .lng p span:first-child {
+    margin-right: 3px;
+    cursor: pointer;
+    opacity: 1
+}
+
+.menu .lng p span:last-child {
+    cursor: pointer;
+    margin-left: 3px;
+    opacity: .5
 }
 
 @media screen and (max-width: 1100px) {
