@@ -61,10 +61,9 @@ function Menu() {
                 }}>{t('Promo')}  </a>
                 <a href="#package">{t('Packages')}  </a>
                 <a href="#activitie">{t('Activities')}  </a>
-                <a href="">{t('Airport transfer')}  </a>
-                <a href="">{t('Car rental')}  </a>
-                <a href="">{t('Contact')}  </a>
-                <a href='#'><span>{t('group')}</span></a>
+                <a href="#transfer">{t('Airport transfer')}  </a>
+                <a href='#blog'>Blog</a>
+                <a href="#contact">{t('Contact')}  </a>
             </div>
 
             <div className="social">

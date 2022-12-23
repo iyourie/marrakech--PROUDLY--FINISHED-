@@ -39,6 +39,7 @@ let Package = () => {
                     <Link src={Pa5} h2={t('Private')} h1={t('5p')} h3={t('p3')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(1205 reviews)" price1={t('PrivateP5')} />
                     <Link src={Pa1} h2={t('shared')} h1={t('3s')} h3={t('p2')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(6000 reviews)" price1={t('sharedP3')} />
                     <Link src={Pa3} h2={t('shared')} h1={t('1s')} h3={t('p2')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(1600 reviews)" price1={t('sharedP1')} />
+                    <Link src={Pa7} h2={t('Private')} h1={t('2p')} h3={t('p2')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(2350 reviews)" price1={t('PrivateP2')} />
                     <Link src={Pa4} h2={t('shared')} h1={t('2s')} h3={t('p3')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(1650 reviews)" price1={t('sharedP2')} />
                     <Link src={Pa10} h2={t('DT')} h1={t('3D')} h3={t('p3')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(1280 reviews)" price1={t('Day3')} />
                 </div>

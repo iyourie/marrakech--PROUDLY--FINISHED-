@@ -1,0 +1,241 @@
+.blog {
+    padding-top: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog .containere {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog h1 {
+    font-weight: 900;
+}
+
+.blog h5 {
+    padding-bottom: 30px;
+}
+
+.blog .B-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog img:nth-child(1) {
+    height: 500px;
+    grid-area: 1 / 1 / 3 / 2;
+    padding-right: 5px;
+}
+
+.blog img:nth-child(2) {
+    height: 250px;
+    width: 512px;
+    grid-area: 1 / 2 / 2 / 3;
+    padding-bottom: 5px;
+}
+
+.blog img:nth-child(3) {
+    height: 250px;
+    width: 512px;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+@media screen and (max-width: 1320px) {
+    .blog .B-content {
+        display: grid;
+        grid-template-columns: 400px 400px;
+    }
+
+    .blog img:nth-child(1) {
+        width: 800px;
+        grid-area: 1 / 1 / 2 / 3;
+        padding-right: 0px;
+        padding-bottom: 5px;
+    }
+
+    .blog img:nth-child(2) {
+        width: 400px;
+        grid-area: 2 / 1 / 3 / 2;
+        padding-bottom: 0px;
+        padding-right: 5px;
+    }
+
+    .blog img:nth-child(3) {
+        width: 400px;
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
+
+@media (max-width: 900px) {
+    .blog .B-content {
+        display: grid;
+        grid-template-columns: 300px 300px;
+    }
+
+    .blog img:nth-child(1) {
+        width: 600px;
+        grid-area: 1 / 1 / 2 / 3;
+        height: 300px;
+    }
+
+    .blog img:nth-child(2) {
+        width: 600px;
+        grid-area: 2 / 1 / 2 / 3;
+        height: 300px;
+        padding-bottom: 5px;
+        padding-right: 0px;
+    }
+
+    .blog img:nth-child(3) {
+        width: 600px;
+        grid-area: 3 / 1 / 4 / 3;
+        height: 300px;
+    }
+}
+
+@media (max-width: 650px) {
+    .blog .B-content {
+        display: grid;
+        grid-template-columns: 200px 200px;
+    }
+
+    .blog img:nth-child(1) {
+        width: 400px;
+        height: 200px;
+    }
+
+    .blog img:nth-child(2) {
+        width: 400px;
+        height: 200px;
+    }
+
+    .blog img:nth-child(3) {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    .blog .B-content {
+        display: grid;
+        grid-template-columns: 150px 150px;
+    }
+
+    .blog img:nth-child(1) {
+        width: 300px;
+        height: 150px;
+    }
+
+    .blog img:nth-child(2) {
+        width: 300px;
+        height: 150px;
+    }
+
+    .blog img:nth-child(3) {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+.one {
+    transform: translate(770px, -48px);
+    -webkit-transform: translate(770px, -48px);
+    -moz-transform: translate(770px, -48px);
+    -ms-transform: translate(770px, -48px);
+    -o-transform: translate(770px, -48px);
+}
+
+.two {
+    transform: translate(-732px, -49px);
+}
+
+.three {
+    transform: translate(771px, -349px);
+}
+
+.one,
+.two,
+.three {
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: #0000001f;
+    width: 395px;
+}
+
+@media screen and (max-width: 1320px) {
+
+    .one,
+    .two,
+    .three {
+        font-size: 30px;
+    }
+
+    .one {
+        transform: translate(412px, -50px);
+    }
+
+    .two {
+        transform: translate(-387px, -305px);
+    }
+
+    .three {
+        transform: translate(13px, -97px);
+    }
+}
+
+@media (max-width: 900px) {
+    .one {
+        transform: translate(12px, -48px);
+    }
+
+    .two {
+        transform: translate(-287px, -652px);
+    }
+
+    .three {
+        transform: translate(12px, -398px);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .one,
+    .two,
+    .three {
+        font-size: 25px;
+    }
+
+    .two {
+        transform: translate(-187px, -448px);
+    }
+
+    .three {
+        transform: translate(14px, -290px);
+    }
+}
+
+@media (max-width: 450px) {
+
+    .one,
+    .two,
+    .three {
+        font-size: 20px;
+        width: 247px;
+    }
+
+    .one {
+        transform: translate(11px, -39px);
+    }
+
+    .two {
+        transform: translate(-138px, -341px);
+    }
+
+    .three {
+        transform: translate(12px, -227px);
+    }
+}

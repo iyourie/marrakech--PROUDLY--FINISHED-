@@ -4,11 +4,11 @@
     height: 1054px;
     position: absolute;
     z-index: 3;
-    transform: translate(-700px, 0px);
-    -webkit-transform: translate(-700px, 0px);
-    -moz-transform: translate(-700px, 0px);
-    -ms-transform: translate(-700px, 0px);
-    -o-transform: translate(-700px, 0px);
+    transform: translate(-800px, 0px);
+    -webkit-transform: translate(-800px, 0px);
+    -moz-transform: translate(-800px, 0px);
+    -ms-transform: translate(-800px, 0px);
+    -o-transform: translate(-800px, 0px);
     transition: .4s;
     -webkit-transition: .4s;
     -moz-transition: .4s;

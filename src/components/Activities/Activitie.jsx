@@ -39,6 +39,7 @@ let Activitie = () => {
                     <Link src={Pa5} h2={t('Private')} h1={t('5p')} h3={t('p3')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(1205 reviews)" price1={t('PrivateP5')} />
                     <Link src={Pa2} h2={t('shared')} h1={t('5s')} h3={t('p2')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(2640 reviews)" price1={t('sharedP5')} />
                     <Link src={Pa6} h2={t('Private')} h1={t('1p')} h3={t('p3')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(4000 reviews)" price1={t('PrivateP1')} />
+                    <Link src={Pa10} h2={t('DT')} h1={t('3D')} h3={t('p3')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(1280 reviews)" price1={t('Day3')} />
                     <Link src={Pa1} h2={t('shared')} h1={t('3s')} h3={t('p2')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(6000 reviews)" price1={t('sharedP3')} />
                     <Link src={Pa8} h2={t('Private')} h1={t('3p')} h3={t('p3')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(1670 reviews)" price1={t('PrivateP3')} />
                 </div>

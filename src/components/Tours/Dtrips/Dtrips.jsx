@@ -22,8 +22,10 @@ let Dtrips = () => {
         <div className="c3">
             <Link src={D1} h2={t('DT')} h1={t('1p')} h3={t('p3')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(2000 reviews)" price1={t('PrivateP1')} />
             <Link src={D2} h2={t('DT')} h1={t('2p')} h3={t('p2')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(250 reviews)" price1={t('PrivateP2')} />
-            <Link src={D3} h2={t('DT')} h1={t('3p')} h3={t('p3')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(16000 reviews)" price1={t('PrivateP3')} />
+            <Link src={D3} h2={t('DT')} h1={t('3p')} h3={t('p3')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(16000 reviews)" price1={t('PrivateP3')} /> 
             <Link src={D4} h2={t('DT')} h1={t('4p')} h3={t('p2')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(300 reviews)" price1={t('PrivateP4')} />
+            <Link src={D2} h2={t('DT')} h1={t('2p')} h3={t('p2')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(250 reviews)" price1={t('PrivateP2')} />
+            <Link src={D1} h2={t('DT')} h1={t('1p')} h3={t('p3')} ratingS={<><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /></>} ratingR='5.0' ratingN="(2000 reviews)" price1={t('PrivateP1')} />
         </div>
     )
 }

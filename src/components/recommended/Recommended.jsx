@@ -17,7 +17,7 @@ let Recommended = () => {
     return (
         <div className="recommended">
             <div className="containere">
-                <h1 className='heading'>{t('reco')}</h1>
+                <h1>{t('reco')}</h1>
                 <div className="companies">
                     <a href="https://www.tripadvisor.com/Attraction_Review-g293734-d8514036-Reviews-Marrakesh_Travel_Services-Marrakech_Marrakech_Safi.html" target='_blank' rel='noreferrer'><img src={one} alt="" /></a>
                     <a href="#"><img src={five} alt="" /></a>
