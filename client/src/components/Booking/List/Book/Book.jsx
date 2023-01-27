@@ -2,6 +2,7 @@
 import './Book.css'
 import SmallMap from './SmallMap/SmallMap';
 import { Link } from 'react-router-dom';
+import Payment from './payment/Payment';
 //hooks
 import { useTranslation } from "react-i18next"
 import { useState } from 'react';
@@ -15,16 +16,11 @@ import p from '../../../../assets/102.webp'
 let Left = () => {
     const [t] = useTranslation()
     const [isFocused, setIsFocused] = useState(false);
-    const [isFocused1, setIsFocused1] = useState(false);
     const [isFocused2, setIsFocused2] = useState(false);
     const location = useLocation();
+
     return (
         <div className="left">
-            <div className="top">
-                <h2>1. {t('personal')} </h2>
-                <span>{'>'}</span>
-                <h2>2. {t('Payment')}</h2>
-            </div>
             <div className="middle">
                 <h1>{t('Enter your personal details')}</h1>
                 <div>
@@ -36,11 +32,6 @@ let Left = () => {
                         <span style={{ color: isFocused ? '#21b939' : 'rgb(199 199 199)' }}>{t('full name')}</span>
                         <input type="text" onFocus={() => setIsFocused(true)}
                             onBlur={() => setIsFocused(false)} />
-                    </div>
-                    <div>
-                        <span style={{ color: isFocused1 ? '#21b939' : 'rgb(199 199 199)' }}>email</span>
-                        <input type="email" onFocus={() => setIsFocused1(true)}
-                            onBlur={() => setIsFocused1(false)} />
                     </div>
                     <div>
                         <span style={{ color: isFocused2 ? '#21b939' : 'rgb(199 199 199)' }}>Phone Number</span>
@@ -87,7 +78,7 @@ let Left = () => {
                     document.querySelector('.book .nxt-a').style.marginTop = '30px'
                 }} className='no'>{t('confirm pickup location')}</button>
             </div>
-            <Link to='/Payment' className='nxt-a'>{t('next: payment')}</Link>
+            <Payment />
         </div>
     )
 }

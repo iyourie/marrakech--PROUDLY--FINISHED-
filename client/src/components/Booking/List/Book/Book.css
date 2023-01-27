@@ -18,26 +18,6 @@ body {
     align-items: center;
 }
 
-.book .left .top h2,
-.book .left .top span {
-    font-size: 25px;
-    margin: 5px 10px;
-}
-
-.book .left .top h2:nth-child(1) {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.book .left .top span {
-    color: grey;
-}
-
-.book .left .top h2:nth-child(3) {
-    color: grey;
-    font-weight: bold;
-}
-
 .book .middle {
     margin-top: 50px;
 }
@@ -225,27 +205,4 @@ input::-webkit-inner-spin-button {
     font-weight: bold;
     font-size: 25px;
     background-color: white;
-}
-
-.book .left .nxt-a {
-    color: #21b939;
-    background-color: white;
-    border: solid 1px #21b939;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 8px;
-    border-radius: 23px;
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    -ms-border-radius: 23px;
-    -o-border-radius: 23px;
-    margin-top: 14px;
-    cursor: pointer;
-    text-decoration: none;
-    width: 650px;
-    text-align: center;
-    letter-spacing: 1px;
-    position: absolute;
-    margin-top: 130px;
-    margin-bottom: 5px;
 }

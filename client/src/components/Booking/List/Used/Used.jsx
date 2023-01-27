@@ -10,7 +10,7 @@ let Used = ({ span, Big_title, rate, rev, src1, src2, src3, src4, small_title, p
     const [t] = useTranslation()
     return (
         <>
-            <span className='span1'>{span}</span>``
+            <span className='span1'>{span}</span>
             <h1 className="Bh1">{Big_title}</h1>
             <div className="review">
                 <span>{rate}</span>

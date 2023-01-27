@@ -15,7 +15,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import scroll file
 import Scroll from './components/Scroll'
 
+
+
+import { useEffect } from "react";
+import Axios from "axios";
+
+
+
+
 function App() {
+  useEffect(() => {
+    Axios.delete("http://localhost:3001/deletePrice")
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
+  }, [])
+
   return (
     <>
       <Scroll />

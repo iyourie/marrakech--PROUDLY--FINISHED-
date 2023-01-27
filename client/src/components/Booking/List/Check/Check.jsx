@@ -13,6 +13,7 @@ import { GrLanguage } from "react-icons/gr";
 
 
 
+
 // the langaugecom div 
 let LanguageCom = () => {
     return (
@@ -161,6 +162,7 @@ let Check = () => {
                     } else {
                         document.querySelector('.Checked').style.display = 'block'
                         document.querySelector('.Checked .left h3').innerHTML = 'Language: ' + document.querySelector('.language h3').innerHTML;
+
                         document.querySelector('.Checked .right h1').innerHTML = num * 2500 + num1 * 2000 + num2 * 0 + ' dh'
 
                         document.querySelector('.Checked .bottom .right-little1 h1').innerHTML = `Adult ${num} × 2500 dh`

@@ -6,12 +6,22 @@ import { useNavigate } from 'react-router-dom';
 import './Checked.css'
 import '../Check/Check'
 
+import Axios from 'axios'
+
 let Checked = () => {
     const navigate = useNavigate();
     const toComponentB = () => {
         navigate('/book', { state: document.querySelector('.date h3').innerHTML });
     }
     const [t] = useTranslation()
+
+    const sendDataPlease = () => {
+        Axios.post("http://localhost:3001/price", {
+            price: document.querySelector('.Checked .right h1').textContent.match(/\d+/)[0]
+        }).then(() => {
+            toComponentB()
+        })
+    }
 
     return (
         < div className="Checked" >
@@ -62,7 +72,7 @@ let Checked = () => {
                     <h2>Cancel before 7:20 AM on January 10 for a full refund</h2>
                 </div>
                 <div className="right">
-                    <a onClick={() => toComponentB()}>book</a>
+                    <a onClick={() => sendDataPlease()}>book</a>
                 </div>
             </div>
         </div >
