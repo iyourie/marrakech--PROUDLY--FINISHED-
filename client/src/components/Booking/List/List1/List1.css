@@ -1,0 +1,541 @@
+@import '~leaflet/dist/leaflet.css';
+
+/* list 1 styling start*/
+.List1 {
+    padding-left: 15px;
+    padding-top: 10px;
+    height: 1154px;
+    width: 1300px;
+    overflow: scroll;
+    background: white;
+    box-shadow: 4px 4px 37px 10px rgba(189, 189, 189, 0.55);
+    -webkit-box-shadow: 4px 4px 37px 10px rgba(189, 189, 189, 0.55);
+    -moz-box-shadow: 4px 4px 37px 10px rgba(189, 189, 189, 0.55);
+    overflow-x: hidden;
+    margin: 50px 0;
+    scroll-behavior: smooth;
+    position: relative;
+    margin: auto;
+}
+
+@media (max-width: 1300px) {
+    .List1 {
+        width: 100%;
+    }
+}
+
+/* list 1 styling end */
+
+/* close icons  */
+.List1 .closeIt {
+    position: absolute;
+    right: 0;
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+/* span1 styling start */
+.List1 .span1 {
+    border: 1px solid #21b939;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 17px;
+    background-color: #21b939;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1300px) {
+    .List1 .span1 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .List1 .span1 {
+        font-size: 10px;
+    }
+}
+
+/* span1 styling end */
+
+/* span1 Bh1 st */
+.List1 .Bh1 {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1300px) {
+    .List1 .Bh1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .List1 .Bh1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .List1 .Bh1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    .List1 .Bh1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .List1 .Bh1 {
+        font-size: 14px;
+    }
+}
+
+/* span1 Bh1 end */
+
+/* span1 review st*/
+.List1 .review span:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.List1 .review span:last-child {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #21b939;
+    text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+    .List1 .review span:first-child {
+        font-size: 18px;
+    }
+
+    .List1 .review span:last-child {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .List1 .review span:first-child {
+        font-size: 16px;
+    }
+
+    .List1 .review span:last-child {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .List1 .review span:first-child {
+        font-size: 14px;
+    }
+
+    .List1 .review span:last-child {
+        font-size: 14px;
+    }
+}
+
+/* span1 review end*/
+
+/* pics st  */
+
+.List1 .pics {
+    display: grid;
+    grid-template-columns: 800px 200px 200px;
+    margin-top: 20px;
+}
+
+.List1 .pics img:first-child {
+    grid-area: 1 / 1 / 3 / 2;
+    width: 800px;
+    height: 400px;
+    padding-right: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.List1 .pics img:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 4;
+    width: 400px;
+    height: 200px;
+    padding-bottom: 5px;
+    border-top-right-radius: 5px;
+}
+
+.List1 .pics img:nth-child(3) {
+    grid-area: 2 / 2 / 3 / 3;
+    width: 200px;
+    height: 200px;
+    padding-right: 5px;
+}
+
+.List1 .pics img:last-child {
+    grid-area: 2 / 3 / 3 / 4;
+    width: 200px;
+    height: 200px;
+    border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 1300px) {
+    .List1 .pics {
+        grid-template-columns: 250px 250px 250px;
+    }
+
+    .List1 .pics img:first-child {
+        padding-right: 0px;
+        padding-bottom: 5px;
+        grid-area: 1 / 1 / 2 / 4;
+        width: 750px;
+        height: 375px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .List1 .pics img:nth-child(2) {
+        padding-bottom: 0px;
+        grid-area: 2 / 2 / 3 / 3;
+        width: 250px;
+        height: 130px;
+        padding: 0 5px;
+        border-top-right-radius: 0px;
+    }
+
+    .List1 .pics img:nth-child(3) {
+        padding-right: 0px;
+        grid-area: 2 / 1 / 3 / 2;
+        width: 250px;
+        height: 130px;
+        border-bottom-left-radius: 5px
+    }
+
+    .List1 .pics img:last-child {
+        grid-area: 2 / 3 / 3 / 4;
+        width: 250px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 850px) {
+    .List1 .pics {
+        grid-template-columns: 200px 200px 200px;
+    }
+
+    .List1 .pics img:first-child {
+        width: 600px;
+        height: 300px;
+    }
+
+    .List1 .pics img:nth-child(2) {
+        width: 200px;
+    }
+
+    .List1 .pics img:nth-child(3) {
+        width: 200px;
+    }
+
+    .List1 .pics img:last-child {
+        grid-area: 2 / 3 / 3 / 4;
+        width: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    .List1 .pics {
+        grid-template-columns: 150px 150px 150px;
+    }
+
+    .List1 .pics img:first-child {
+        width: 450px;
+        height: 225px;
+    }
+
+    .List1 .pics img:nth-child(2) {
+        width: 150px;
+        height: 110px;
+    }
+
+    .List1 .pics img:nth-child(3) {
+        width: 150px;
+        height: 110px;
+    }
+
+    .List1 .pics img:last-child {
+        width: 150px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 500px) {
+    .List1 .pics {
+        grid-template-columns: 300px;
+    }
+
+    .List1 .pics img:first-child,
+    .List1 .pics img:nth-child(2),
+    .List1 .pics img:nth-child(3),
+    .List1 .pics img:last-child {
+        width: 300px;
+        height: 160px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+
+    .List1 .pics img:first-child {
+        grid-area: 1/1/2/2;
+
+    }
+
+    .List1 .pics img:nth-child(2) {
+        grid-area: 2/1/3/2;
+        padding: 0px;
+    }
+
+    .List1 .pics img:nth-child(3) {
+        grid-area: 3/1/4/2;
+        padding: 5px 0;
+    }
+
+    .List1 .pics img:last-child {
+        grid-area: 4/1/5/2;
+    }
+}
+
+/* pics end*/
+
+.List1 .alll {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+/* smallT st  */
+.List1 .alll .smallT {
+    font-size: 22px;
+    width: 800px;
+    margin-top: 25px;
+    line-height: 33px;
+}
+
+@media (max-width: 1000px) {
+    .List1 .alll .smallT {
+        font-size: 18px;
+        width: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .List1 .alll .smallT {
+        font-size: 16px;
+        width: auto;
+        padding-right: 10px;
+    }
+}
+
+/* smallT end*/
+
+
+
+.List1 .alll .price {
+    margin-top: 35px;
+    margin-left: 70px;
+}
+
+.List1 .alll .price a {
+    color: white;
+    background-color: #21b939;
+    border: 1px solid #21b939;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.List1 .alll .price a:hover {
+    color: #21b939;
+    background-color: white;
+    border: 1px solid #21b939;
+}
+
+.List1 .alll .price a:first-child {
+    margin-right: 10px;
+}
+
+.List1 .alll .price div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #21b939;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+@media (max-width: 1300px) {
+    .List1 .alll {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .List1 .alll .price {
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    .List1 .alll .price a {
+        font-size: 19px;
+    }
+
+    .List1 .alll .price div {
+        width: 262px;
+    }
+}
+
+@media (max-width: 600px) {
+    .List1 .alll .price a {
+        font-size: 15px;
+    }
+
+    .List1 .alll .price div {
+        width: 218px;
+    }
+}
+
+.List1 .info h1 {
+    font-weight: bold;
+    color: #21b939;
+}
+
+.List1 .info h2 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.List1 .info h2,
+.List1 .info p {
+    margin-left: 15px;
+}
+
+@media (max-width: 700px) {
+
+    .List1 .info h2,
+    .List1 .info p {
+        padding-right: 10px;
+    }
+}
+
+
+
+
+
+
+.List1 .itinerary {
+    margin-bottom: 40px;
+}
+
+.List1 .itinerary h1 {
+    font-weight: bold;
+    color: #21b939;
+}
+
+.List1 .itinerary .infor h2 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.List1 .itinerary .infor h2,
+.List1 .itinerary .infor p {
+    margin-left: 15px;
+    padding-right: 15px;
+}
+
+.List1 .include h1 {
+    font-weight: bold;
+    color: #21b939;
+}
+
+.leader {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #21b939;
+}
+
+@media (max-width: 1300px) {
+
+    .List1 .info h1,
+    .itinerary h1,
+    .include h1,
+    .bring h1 {
+        font-size: 35px;
+    }
+
+    .List1 .info h2,
+    .List1 .itinerary .infor h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .List1 .info h1,
+    .itinerary h1,
+    .include h1,
+    .bring h1 {
+        font-size: 30px;
+    }
+
+    .List1 .info h2,
+    .List1 .itinerary .infor h2 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .List1 .info h1,
+    .itinerary h1,
+    .include h1,
+    .bring h1 {
+        font-size: 25px;
+    }
+
+    .List1 .info h2,
+    .List1 .itinerary .infor h2 {
+        font-size: 15px;
+    }
+}
+
+.List1 hr {
+    width: 90%;
+    margin: auto;
+    opacity: 1;
+    color: #80808042
+}

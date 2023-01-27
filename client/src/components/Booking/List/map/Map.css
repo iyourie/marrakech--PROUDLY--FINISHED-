@@ -1,0 +1,136 @@
+.List1 .map {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    position: relative;
+}
+
+@media (max-width: 850px) {
+    .List1 .map {
+        display: block;
+    }
+}
+
+.List1 .map .map-itenerary {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.List1 .map .map-itenerary .hoursNum {
+    border: #21b939 solid 1px;
+    color: white;
+    background-color: #21b939;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 3px;
+    position: absolute;
+    left: 35px;
+    font-size: 16px;
+    top: 332px;
+}
+
+@media (max-width: 1300px) {
+    .List1 .map .map-itenerary .hoursNum {
+        display: none;
+    }
+}
+
+.List1 .map i {
+    color: #21b939;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.List1 .map .map-itenerary span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.List1 .map .map-itenerary hr {
+    margin: 10px 0;
+    border: solid 1px #21b939;
+    width: 25px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    opacity: 1;
+}
+
+.leaflet-container {
+    height: 700px;
+    width: 500px;
+}
+
+@media (max-width: 1000px) {
+    .leaflet-container {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .leaflet-container {
+        height: 700px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .leaflet-container {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.leaflet-container.leaflet-touch-drag {
+    -ms-touch-action: pinch-zoom;
+    touch-action: none;
+    touch-action: pinch-zoom;
+}
+
+.leaflet-container.leaflet-touch-zoom {
+    -ms-touch-action: pan-x pan-y;
+    touch-action: pan-x pan-y;
+}
+
+
+.leaflet-container {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.leaflet-container {
+    background: #ddd;
+    outline-offset: 1px;
+}
+
+.leaflet-grab {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+}
+
+.leaflet-container {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.leaflet-container {
+    overflow: hidden;
+}
+
+.leaflet-control-attribution {
+    display: none;
+}

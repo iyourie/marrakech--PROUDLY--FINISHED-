@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+  <title>React App</title>
+  <style>
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    @keyframes tick {
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
+    .loader {
+      position: relative;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 2px solid black;
+    }
+
+    .loader::after {
+      content: "";
+      position: absolute;
+      bottom: 29px;
+      left: 30px;
+      display: block;
+      transform-origin: 0% 100%;
+      width: 2px;
+      height: 24px;
+      background: black;
+      animation: tick 1s infinite linear;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="loading">
+      <div class="loader"></div>
+    </div>
+  </div>
+</body>
+
+</html>

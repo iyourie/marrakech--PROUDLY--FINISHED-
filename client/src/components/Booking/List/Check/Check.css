@@ -1,0 +1,350 @@
+/* check section style st  */
+.List1 .Check {
+    user-select: none;
+    border: solid #21b939 1px;
+    background-color: #21b939;
+    -webkit-user-select: none;
+    height: 111px;
+    width: 800px;
+    margin: 29px 0;
+}
+
+.List1 .Check .every {
+    display: flex;
+}
+
+.List1 .Check svg {
+    font-size: 21px;
+}
+
+.List1 .Check .title {
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.List1 .Check .partici,
+.List1 .Check .date,
+.List1 .Check .language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.List1 .Check .partici h3,
+.List1 .Check .date h3,
+.List1 .Check .language h3 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.List1 .Check .partici h3 {
+    display: none;
+    font-size: 16px;
+}
+
+.List1 .Check .partici-div {
+    border: solid 1px white;
+    background: white;
+    width: 350px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+    box-shadow: -7px 2px 20px #8b8b8b;
+    transition: 0.3s;
+    position: absolute;
+    left: 17px;
+    transform: translate(0px, 20px);
+    -webkit-transform: translate(0px, 20px);
+    -moz-transform: translate(0px, 20px);
+    -ms-transform: translate(0px, 20px);
+    -o-transform: translate(0px, 20px);
+    visibility: hidden;
+}
+
+.List1 .Check .adult,
+.Check .children,
+.Check .baby {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.List1 .Check .adult,
+.Check .children {
+    border-bottom: 1px solid rgba(218, 218, 218, 0.432);
+}
+
+.List1 .Check .partici-div h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    user-select: none;
+}
+
+.List1 .Check .partici-div span {
+    color: #c1c0c0;
+    font-size: 20px;
+}
+
+.List1 .Check .partici-div .number {
+    display: flex;
+    align-items: center;
+}
+
+.List1 .Check .partici-div .number svg {
+    font-size: 25px;
+    color: #21b939;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.List1 .Check .partici-div .number div {
+    border: 1px solid rgba(218, 218, 218, 0.432);
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.List1 .Check .partici-div.none-flex {
+    visibility: visible;
+    transform: translate(0px, 35px);
+    -webkit-transform: translate(0px, 35px);
+    -moz-transform: translate(0px, 35px);
+    -ms-transform: translate(0px, 35px);
+    -o-transform: translate(0px, 35px);
+}
+
+.rotate {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+
+
+.List1 .Check .language-com {
+    position: absolute;
+    left: 437px;
+    border: solid 1px white;
+    background: white;
+    box-shadow: -7px 2px 20px #8b8b8b;
+    width: 350px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+    transform: translate(0px, 20px);
+    -webkit-transform: translate(0px, 20px);
+    -moz-transform: translate(0px, 20px);
+    -ms-transform: translate(0px, 20px);
+    -o-transform: translate(0px, 20px);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    visibility: hidden;
+}
+
+.List1 .Check .language-com div {
+    cursor: pointer;
+}
+
+.List1 .Check .language-com label {
+    padding: 7px;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.List1 .Check .language-com input {
+    width: 30px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.List1 .Check .language-com.none {
+    visibility: visible;
+    transform: translate(0px, 35px);
+    -webkit-transform: translate(0px, 35px);
+    -moz-transform: translate(0px, 35px);
+    -ms-transform: translate(0px, 35px);
+    -o-transform: translate(0px, 35px);
+}
+
+.Check .checking-btn {
+    color: white;
+    background-color: #21b939;
+    font-weight: bold;
+    font-size: 19px;
+    border: 2px solid white;
+    margin-left: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    width: 91px;
+    text-align: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.Check .checking-btn:hover {
+    color: #21b939;
+    background-color: white;
+    border: 2px solid #21b939;
+    box-shadow: none;
+}
+
+@media (max-width: 850px) {
+    .List1 .Check {
+        height: 213px;
+        width: 600px;
+    }
+
+    .List1 .Check .every {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 200px 200px;
+        gap: 10px;
+    }
+
+    .Check .checking-btn {
+        grid-area: 3 / 1 / 4 / 3;
+        margin-left: 0px;
+    }
+
+    .List1 .Check .language,
+    .Check .checking-btn {
+        width: 410px;
+    }
+
+    .List1 .Check .partici,
+    .List1 .Check .date,
+    .List1 .Check .language {
+        margin-left: 0px;
+    }
+
+    .List1 .Check .partici-div,
+    .List1 .Check .language-com {
+        left: 100px;
+    }
+
+    .List1 .Check .language-com {
+        transform: translate(0px, 67px);
+        -webkit-transform: translate(0px, 67px);
+        -moz-transform: translate(0px, 67px);
+        -ms-transform: translate(0px, 67px);
+        -o-transform: translate(0px, 67px);
+    }
+
+    .List1 .Check .language-com.none {
+        visibility: visible;
+        transform: translate(0px, 81px);
+        -webkit-transform: translate(0px, 81px);
+        -moz-transform: translate(0px, 81px);
+        -ms-transform: translate(0px, 81px);
+        -o-transform: translate(0px, 81px);
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .List1 .Check {
+        height: 249px;
+        width: 450px;
+    }
+
+    .List1 .Check .title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .List1 .Check .every {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .List1 .Check .partici,
+    .List1 .Check .date,
+    .List1 .Check .language,
+    .Check .checking-btn {
+        width: 350px;
+    }
+
+
+    .List1 .Check .partici-div {
+        left: 54px;
+        transform: translate(0px, 50px);
+    }
+
+    .List1 .Check .partici-div.none-flex {
+        visibility: visible;
+        transform: translate(0px, 54px);
+        -webkit-transform: translate(0px, 54px);
+        -moz-transform: translate(0px, 54px);
+        -ms-transform: translate(0px, 54px);
+        -o-transform: translate(0px, 54px);
+    }
+
+    .List1 .Check .language-com {
+        left: 54px;
+        transform: translate(0px, 137px);
+        -webkit-transform: translate(0px, 137px);
+        -moz-transform: translate(0px, 137px);
+        -ms-transform: translate(0px, 137px);
+        -o-transform: translate(0px, 137px);
+    }
+
+    .List1 .Check .language-com.none {
+        visibility: visible;
+        transform: translate(0px, 143px);
+        -moz-transform: translate(0px, 143px);
+        -ms-transform: translate(0px, 143px);
+        -o-transform: translate(0px, 143px);
+        -webkit-transform: translate(0px, 143px);
+    }
+}
+
+@media (max-width: 500px) {
+    .List1 .Check {
+        height: 277px;
+        width: 350px;
+    }
+
+    .List1 .Check .partici,
+    .List1 .Check .date,
+    .List1 .Check .language,
+    .Check .checking-btn {
+        width: 300px;
+    }
+
+    .List1 .Check .partici-div {
+        left: 30px;
+        transform: translate(0px, 50px);
+    }
+
+    .List1 .Check .language-com {
+        left: 30px;
+    }
+}
+
+/* check section style end  */

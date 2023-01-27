@@ -1,0 +1,141 @@
+.calendar {
+    position: absolute;
+    left: 227px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px white;
+    background: white;
+    box-shadow: -7px 2px 20px #8b8b8b;
+    width: 350px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+    visibility: hidden;
+    transform: translate(0px, 20px);
+    -webkit-transform: translate(0px, 20px);
+    -moz-transform: translate(0px, 20px);
+    -ms-transform: translate(0px, 20px);
+    -o-transform: translate(0px, 20px);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.List1 .Check .calendar.flex {
+    visibility: visible;
+    transform: translate(0px, 35px);
+    -webkit-transform: translate(0px, 35px);
+    -moz-transform: translate(0px, 35px);
+    -ms-transform: translate(0px, 35px);
+    -o-transform: translate(0px, 35px);
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar-header button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 24px;
+}
+
+.calendar-header button:hover {
+    background-color: #21b939;
+    box-shadow: none;
+    border: none;
+}
+
+.calendar-header span {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 2px;
+    padding: 10px;
+}
+
+.calendar-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    color: #666;
+    cursor: pointer;
+}
+
+.calendar-day.selected {
+    background-color: #666;
+    color: #21b939 !important;
+}
+
+.calendar-day.today {
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.calendar-day:not(.other-month) {
+    background-color: #fff;
+}
+
+.calendar-day.other-month {
+    color: #ccc;
+}
+
+.calendar-day.sunday,
+.past-date {
+    color: #aaa;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
+
+.sundaypast-date {
+    color: #aaa;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
+
+@media (max-width: 850px) {
+    .calendar {
+        left: 311px;
+    }
+}
+
+@media (max-width: 600px) {
+    .calendar {
+        left: 54px;
+        transform: translate(0px, 122px);
+        -webkit-transform: translate(0px, 122px);
+        -moz-transform: translate(0px, 122px);
+        -ms-transform: translate(0px, 122px);
+        -o-transform: translate(0px, 122px);
+    }
+
+    .List1 .Check .calendar.flex {
+        transform: translate(0px, 130px);
+        -webkit-transform: translate(0px, 130px);
+        -moz-transform: translate(0px, 130px);
+        -ms-transform: translate(0px, 130px);
+        -o-transform: translate(0px, 130px);
+    }
+}
+
+@media (max-width: 500px) {
+    .calendar {
+        left: 30px;
+    }
+}
