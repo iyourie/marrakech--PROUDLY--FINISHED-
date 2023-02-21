@@ -7,11 +7,13 @@ import Axios from 'axios';
 
 function Payment() {
     const [pricee, setPrice] = useState()
+    
     useEffect(() => {
         Axios.get("http://localhost:3001/payments").then((response) => {
             setPrice(response.data[0].price)
         })
     }, [])
+
     const [t] = useTranslation()
     const publishableKey = 'pk_test_51MOkdoD7ScukiwQNQSS4O6GFZFXyiVHC2Ql9nZmofMUvwVB5fNLT8lLLh1VUH7v58zBux6TeDfAIHzCfcmidgOCA00nRWPXodJ';
     const priceForStripe = pricee * 100;
